@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale = 1">
+</head>
+<body>
+	<header class="head">
+		<div class="wrapper">
+			<div class="head_container">
+				<div class="head_top">
+				    <div class="logo">
+				        <a href="#">
+				            <span>Cozy House</span>
+				            <p>Shelter for pets in Boston</p>
+				        </a>
+				    </div>
+				        <ul class = "menu_list">
+				            <li><a href="#">About the shelter</a></li>
+				            <li><a href="#">Our pets</a></li>
+				            <li><a href="#">To help the shelter</a></li>
+				            <li><a href="#">Contacts</a></li>
+				        </ul>
+				</div>
+                
+				<div class="header_tagline">
+					<h1>Not only people need a house</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida 
+						est in porttitor  porttitor. Duis sodales elementum ipsum, vehicula 
+					condimentum erat fringilla et.</p>
+					<button type="button" class="btn head_btn">Make a friend</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="about_shelter_section">
+			<div class="wrapper">
+				<div class="about_shelter_container">
+					<div class="about_shelter_info">
+                    <div class="img_container">
+						<img src="./img/about_shelter/Pets.png">
+					</div>
+				        <h2 class="about_shelter_h2">About the shelter “Cozy House”</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.</p>
+						<p>Donec consectetur, diam in porta tempus, urna ligula vestibulum nibh, ac ornare felis justo nec leo. Praesent mattis nibh quis ultrices pharetra. Morbi tempus at ante sit amet tristique. Maecenas dignissim justo orci, in laoreet urna dapibus nec. Praesent quis tortor faucibus, tristique ante vitae, dignissim lorem. Sed at ligula et sem mattis gravida ac vel erat.</p>
+					</div>
+					</div>
+			</div>
+		</section>
+
+		<section class="dogs_slider_section">
+			<div class="wrapper">
+				<div class="dogs_shelter_container">
+					<h2 class="dogs_shelter_container_header">Our friends who are looking for a house</h2>
+					<div class="dogs_shelter_slider">
+						<button type="button" class="slider_btn prev">&larr;</button>
+						<div class="ovreflow_hidden_cont">
+						<div class = "slider_items_container">
+							<div class="slider_item" data-item = "katrine">
+								<img src="./img/slider/katrine.png" alt="Katrine">
+								<p>Katrine</p>
+								<button type="button" class="btn" >Learn more</button>
+							</div>
+							<div class="slider_item" data-item = "jennifer">
+								<img src="./img/slider/jennifer.png" alt="Jennifer">
+								<p>Jennifer</p>
+								<button type="button" class="btn" >Learn more</button>
+							</div>
+							<div class="slider_item" data-item = "woody">
+								<img src="./img/slider/woody.png" alt="Woody">
+								<p>Woody</p>
+								<button type="button" class="btn" >Learn more</button>
+							</div>
+							<div class="slider_item" data-item = "katrine">
+								<img src="./img/slider/katrine.png" alt="Katrine">
+								<p>Katrine</p>
+								<button type="button" class="btn" >Learn more</button>
+							</div>
+							<div class="slider_item" data-item = "jennifer">
+								<img src="./img/slider/jennifer.png" alt="Jennifer">
+								<p>Jennifer</p>
+								<button type="button" class="btn" >Learn more</button>
+							</div>
+							<div class="slider_item" data-item = "woody">
+								<img src="./img/slider/woody.png" alt="Woody">
+								<p>Woody</p>
+								<button type="button" class="btn" >Learn more</button>
+							</div>
+						</div>
+						</div>
+					<button type="button" class="slider_btn next">&rarr;</button>
+					</div>
+					<a href="#" class="know_rest_btn btn">Get to know the rest</a>
+
+					<div class="modal_frame" data-modal = "jennifer">
+						<div class="img_container">
+							<img src="./img/modal/modal_jeni.png" alt="Jennifer">
+						</div>
+						<div class="modal_info">
+							<h2>Jennifer</h2>
+							<span>Pooch + Labrador</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</p>
+							<ul>
+								<li><span>Age:</span> 2 months</li>
+								<li><span>Inoculations:</span> none</li>
+								<li><span>Diseases:</span> none</li>
+								<li><span>Parasites:</span> none</li>
+							</ul>
+						</div>
+						<span class="close"></span>
+					</div>
+
+					<div class="modal_frame" data-modal = "katrine">
+						<div class="img_container">
+							<img src="./img/slider/katrine.png" alt="Jennifer">
+						</div>
+						<div class="modal_info">
+							<h2>Katrine</h2>
+							<span>British</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</p>
+							<ul>
+								<li><span>Age:</span> 5 months</li>
+								<li><span>Inoculations:</span> none</li>
+								<li><span>Diseases:</span> none</li>
+								<li><span>Parasites:</span> none</li>
+							</ul>
+						</div>
+						<span class="close"></span>
+					</div>
+
+					<div class="modal_frame" data-modal="woody">
+						<div class="img_container">
+							<img src="./img/slider/woody.png" alt="Jennifer">
+						</div>
+						<div class="modal_info">
+							<h2>Woody</h2>
+							<span>Labrador</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</p>
+							<ul>
+								<li><span>Age:</span> 1 year</li>
+								<li><span>Inoculations:</span> yes</li>
+								<li><span>Diseases:</span> none</li>
+								<li><span>Parasites:</span> none</li>
+							</ul>
+						</div>
+						<span class="close"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="help_shelter_section">
+			<div class="wrapper">
+				<div class="help_shelter_container">
+					<h2>Than you can help our shelter</h2>
+					<div class="help_items_container">
+					    <div class="help_item">
+					        <div class="img_container">
+					            <img src="./img/help_items/pet-food.png" alt="Pet food">
+					        </div>
+					        <p>Pet food</p>
+					    </div>
+					    <div class="help_item">
+					        <div class="img_container">
+					            <img src="./img/help_items/ambulance.png" alt="Transportation">
+					        </div>
+					        <p>Transportation</p>
+					    </div>
+					    <div class="help_item">
+					        <div class="img_container">
+					            <img src="./img/help_items/ball.png" alt="Toys">
+					        </div>
+					        <p>Toys</p>
+					    </div>
+					    <div class="help_item">
+					        <div class="img_container">
+					            <img src="./img/help_items/bowl.png" alt="Bowls and cups">
+					        </div>
+					        <p>Bowls and cups</p>
+					    </div>
+					    <div class="help_item">
+					        <div class="img_container">
+					            <img src="./img/help_items/shampoo.png" alt="Shampoos">
+					        </div>
+					        <p>Shampoos</p>
+					    </div>
+					    <div class="help_item">
+					        <div class="img_container">
+					            <img src="./img/help_items/pills.png" alt="Vitamins">
+					        </div>
+					        <p>Vitamins</p>
+					    </div>
+					    <div class="help_item">
+					        <div class="img_container">
+					            <img src="./img/help_items/syringe.png" alt="Medicines">
+					        </div>
+					        <p>Medicines</p>
+					    </div>
+					    <div class="help_item">
+					        <div class="img_container">
+					            <img src="./img/help_items/leash.png" alt="Collars / leashes">
+					        </div>
+					        <p>Collars / leashes</p>
+					    </div>
+					    <div class="help_item">
+					        <div class="img_container">
+					            <img src="./img/help_items/house.png" alt="Sleepig area">
+					        </div>
+					        <p>Sleepig area</p>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="donat_shelter_section">
+			<div class="wrapper">
+				<div class="donat_shelter_container">
+					<div class="img_container">
+						<img src="./img/donat/donat_dog.png" alt="puppy">
+					</div>
+					<div class="donat_info">
+						<h2>In addition, you<br> can make a donation</h2>
+						<p>Name of the bank / Type of bank account</p>
+						<button type = "button" class="donat_btn btn">8380 2880 8028 8791 7435</button>
+						<p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed 
+						ac diam. Praesent ultrices maximus tortor et vulputate. Interdum 
+						et malesuada fames ac ante ipsum primis in faucibus.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class = "foot">
+		<div class="wrapper">
+		    <div class="footer_container">
+		        <div class="footer_contacts foot_item">
+		            <h3>For questions<br>and suggestions</h3>
+		            <p class="email">email@shelter.com</p>
+		            <p class="phone">+13 674 567 75 54</p>
+		        </div>
+		    
+		        <div class="footer_adress foot_item">
+		            <h3>We are waiting<br>for your visit</h3>
+		            <p class="contact">Boston, Central Street, 1st
+		            (Entrance from the store)</p>
+		            <p class="contact">London, South Park, 18st</p>
+		        </div>
+		    </div>
+		</div>
+	</footer>
+
+	<script src="./js/script.js"></script>
+	<script src="./js/slider.js"></script>
+</body>
+</html>
