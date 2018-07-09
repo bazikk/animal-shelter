@@ -3,10 +3,23 @@ html{
 }
 
 body{
+    position: relative;
     margin: 0;
     padding: 0;
     font-family: Arial Regular;
     font-size: 0.95rem;
+}
+
+body.overlay:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 100;
 }
 
 p,h1,h2,h3{
@@ -564,13 +577,17 @@ main{
     position: relative;
     /* display: flex; */
     display: none;
-    width: 82.9%;
+    /* width: 82.9%; */
+    width: 71.8%;
+    top: 250vh;
+    left: 15vw;
     padding:25px 0;
     position: absolute;
     background:#fafafa;
     align-items: center;
     border-radius: 8px;
     box-shadow: 0 0 20px -8px #000000;
+    z-index: 200;
 }
 .modal_frame .close{
     position: absolute;
@@ -689,6 +706,16 @@ main{
 .showOff{
     display: none;
 }
+
+/* .overlay{
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: black;
+    z-index: 5;
+    cursor: pointer;
+} */
+
 @media screen and (max-width:1136px){
     .foot{
         background-position-x: 65%;
@@ -813,6 +840,19 @@ main{
         text-align: center;
     }
 
+    .modal_frame .img_container{
+        display: none;
+    }
+
+    .modal_frame .modal_info{
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .modal_frame .modal_info h2,
+    .modal_frame .modal_info span{
+        align-self: center;
+    }
 }
 
 @media screen and (max-width:500px){
@@ -884,19 +924,6 @@ main{
         margin-left: 50px;
     }
 
-    .modal_frame .img_container{
-        display: none;
-    }
-
-    .modal_frame .modal_info{
-        width: 100%;
-        padding: 0 5%;
-    }
-
-    .modal_frame .modal_info h2,
-    .modal_frame .modal_info span{
-        align-self: center;
-    }
 }
 
 @media screen and (max-width:360px){
