@@ -41,7 +41,3 @@ function sliderItemWidth(sliderItemsCount){
     return itemWidth;
   }
 
-function textFunc(){
-    return null;
-}
-
