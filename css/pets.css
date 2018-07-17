@@ -136,10 +136,15 @@ img{
     transition: all 0.5s ease;
 }
 
+main.wrapper{
+    padding:0 2%;
+}
+
 .pets_container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 65px;
 }
 
 .dogs_shelter_container_header{
@@ -171,6 +176,7 @@ img{
     margin-bottom: 35px;
     background-color: #fafafa;
     border-radius: 10px;
+    transition: box-shadow 0.2s;
 }
 
 .pet_item:not(:nth-child(4n)){
@@ -199,7 +205,51 @@ img{
     font-size: 1.05rem;
     letter-spacing: 0.06em;
     text-align: center;
+    transition: background-color 0.3s;
 }
+
+.pagination_container{
+    margin-top:27px;
+}
+
+.pagination_container a{
+    font-family: Times New Roman;
+    font-size: 1.25rem;
+    display: inline-block;
+    padding: 11.5px 18px;
+    margin-right: 17px;
+    border: 2px solid #f1cdb3;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    transition: background-color 0.3s;
+}
+
+.pagination_container span{
+    margin-right: 12px;
+    color:#f1cdb3;
+}
+/* .pagination_container ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pagination_container ul li{
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 2px solid #f1cdb3;
+    text-align: center;
+}
+
+.pagination_container ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+} */
 
 .foot{
     background: url(../img//foot/footer_bg.jpg) no-repeat center center;
@@ -276,4 +326,17 @@ img{
 .footer_contacts {
     /* margin-bottom: 70px; */
     margin-right: 12.4%;
+}
+
+/****************************hovers,actives and etc*************************/
+.pet_item .btn:hover{
+    background-color: #f1cdb3;
+}
+
+.pet_item:hover{
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+
+.pagination_container a:hover{
+    background-color: #f1cdb3;
 }
