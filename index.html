@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Animal Shelter</title>
 	<link rel="stylesheet" href="./css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale = 1">
+	<script
+  	src="https://code.jquery.com/jquery-3.3.1.min.js"
+  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  	crossorigin="anonymous"></script>
 </head>
 <body>
 	<header class="head">
@@ -18,10 +22,10 @@
 				        </a>
 				    </div>
 				        <ul class = "menu_list">
-				            <li><a href="#">About the shelter</a></li>
-				            <li><a href="#">Our pets</a></li>
-				            <li><a href="#">To help the shelter</a></li>
-				            <li><a href="#">Contacts</a></li>
+				            <li><a href="#main">About the shelter</a></li>
+				            <li><a href="./pets.html">Our pets</a></li>
+				            <li><a href="#help_shelter">To help the shelter</a></li>
+				            <li><a href="#foot">Contacts</a></li>
 				        </ul>
 				</div>
                 
@@ -36,7 +40,7 @@
 		</div>
 	</header>
 
-	<main>
+	<main id = "main">
 		<section class="about_shelter_section">
 			<div class="wrapper">
 				<div class="about_shelter_container">
@@ -101,7 +105,7 @@
 			</div>
 		</section>
 
-		<section class="help_shelter_section">
+		<section class="help_shelter_section" id = "help_shelter">
 			<div class="wrapper">
 				<div class="help_shelter_container">
 					<h2>Than you can help our shelter</h2>
@@ -183,7 +187,7 @@
 			</div>
 		</section>
 	</main>
-	<footer class = "foot">
+	<footer class = "foot" id = "foot">
 		<div class="wrapper">
 		    <div class="footer_container">
 		        <div class="footer_contacts foot_item">
@@ -256,5 +260,6 @@
 	</div>
 	<script src="./js/script.js"></script>
 	<script src="./js/slider.js"></script>
+	<script src = "./js/smoothScroll.js"></script>
 </body>
 </html>

@@ -15,8 +15,6 @@ slider.addEventListener("click", (e)=>{
             document.body.classList.add("overlay");
         }
     }
-
-    
 });
 
 for(let i of modalFrame){

@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Animal Shelter Pets</title>
     <link rel="stylesheet" href="./css/pets.css">
+    <script
+  	src="https://code.jquery.com/jquery-3.3.1.min.js"
+  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  	crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="head">
@@ -18,16 +22,16 @@
 				</a>
 			</div>
 			<ul class = "menu_list">
-				<li><a href="#">About the shelter</a></li>
-				<li><a href="#">Our pets</a></li>
-				<li><a href="#">To help the shelter</a></li>
-				<li><a href="#">Contacts</a></li>
+				<li><a href="./index.html">About the shelter</a></li>
+				<li><a href="#main">Our pets</a></li>
+				<li><a href="./index.html#help_shelter">To help the shelter</a></li>
+				<li><a href="#foot">Contacts</a></li>
 			</ul>
         </div>
         </div>
     </header>
 
-    <main class="wrapper">
+    <main class="wrapper" id="main">
         <div class="pets_container">
             <h1 class="pets_header">Our friends who<br> are looking for a house</h1>
             <div class="pets_items_container">
@@ -81,7 +85,7 @@
             </div>
         </div>
     </main>
-    <footer class = "foot">
+    <footer class = "foot" id = "foot">
         <div class="wrapper">
             <div class="footer_container">
                 <div class="footer_contacts foot_item">
@@ -99,6 +103,6 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="./js/pagination.js"></script> -->
+    <script src="./js/smoothScroll.js"></script>
 </body>
 </html>
