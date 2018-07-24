@@ -6,7 +6,7 @@ body{
     position: relative;
     margin: 0;
     padding: 0;
-    font-family: Arial Regular;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.95rem;
 }
 
@@ -32,7 +32,7 @@ p{
 }
 
 h1,h2,h3,span{
-    font-family: Georgia Regular;
+    font-family: Georgia, serif;
 }
 
 h2,h3{
@@ -50,7 +50,7 @@ button{
 .head_btn,
 .know_rest_btn{
     font-size: 1.05rem;
-    font-family: Georgia Regular;
+    font-family: Georgia, serif;
 }
 
 a{
@@ -72,6 +72,7 @@ img{
     width: 100%;
     background: url(../img/head/vse.jpg) no-repeat center center;
     background-size: cover;
+    background-color:#483b34;
     /*
     background-image: url(vse.jpg);
     background-repeat: no-repeat;
@@ -268,17 +269,18 @@ main{
     background-color: #fafafa; */
 
     display: inline-block;
-    margin-right:4.3%;
+    margin-right:4.5%;
     width: 29%; 
     background-color: #fafafa;
     text-align: center;
 }
+
 .slider_item:last-of-type{
 	margin-right: 0;
 }
 
 .slider_item p{
-    font-family: Georgia Regular;
+    font-family: Georgia, serif;
 	font-size: 1.25rem;
     line-height: 45px;
 }
@@ -290,7 +292,7 @@ main{
     border: 2px solid #f1cdb3;
     /* margin: 0 14%;  */
     margin-bottom: 20px;
-    font-family: Georgia Regular;
+    font-family: Georgia, serif;
     font-size: 1.05rem;
     letter-spacing: 0.06em;
     text-align: center;
@@ -303,6 +305,7 @@ main{
     border: 2px solid #f1cdb3;
     border-radius: 100%;
     align-self: center;
+    outline: none;
 }
 
 .slider_items_container{
@@ -312,6 +315,7 @@ main{
     /* margin-bottom: 5.6%; */
     white-space: nowrap;
     transition:0.2s margin-left;
+    font-size: 0;
     /* overflow: hidden; */
     /* justify-content: space-between; */
 }
@@ -362,7 +366,7 @@ main{
 }
 
 .next {
-	margin-left: 6.8%;
+	margin-left: 3.39%;
 }
 
 .know_rest_btn{
@@ -420,7 +424,7 @@ main{
 }
 
 .help_item p{
-    font-family: Georgia Regular;
+    font-family: Georgia, serif;
 	font-size: 1.25rem;
     line-height: 24px;
     white-space: nowrap;
@@ -456,7 +460,7 @@ main{
 }
 
 .donat_info p:first-of-type{
-	font-family: Georgia Regular;
+	font-family: Georgia, serif;
     line-height: 19px;
     letter-spacing: 0.06em;
 }
@@ -470,7 +474,7 @@ main{
     padding-right: 13px;
 	margin-top: 13px;
     margin-bottom: 30px;
-    font-family: Times New Roman Regular;
+    font-family: Times New Roman Regular, serif;
     font-size: 1.25rem;
     line-height: 26px;
     letter-spacing: 0.06em;
@@ -488,7 +492,7 @@ main{
 }
 
 .donat_info p:last-of-type{
-	font-family: Arial;
+	font-family: Arial, Helvetica, sans-serif;;
     font-style: italic;
     color: #bcbcbc;
     font-size: 0.75rem;
@@ -499,6 +503,7 @@ main{
 .foot{
     background: url(../img//foot/footer_bg.jpg) no-repeat center center;
     background-size: cover;
+    background-color:#483b34;
 }
 
 .foot .wrapper {
@@ -522,7 +527,7 @@ main{
 }
 
 .foot_item p{
-    font-family: Times New Roman Regular;
+    font-family: Times New Roman Regular, serif;
     font-size: 1.25rem;
     margin-left: 20%;
     margin-top: 10%;
@@ -579,8 +584,9 @@ main{
     display: none;
     /* width: 82.9%; */
     width: 71.8%;
-    top: 250vh;
-    left: 15vw;
+    max-width: 980px;
+    top: 50%;
+    left: 50%;
     padding:25px 0;
     position: absolute;
     background:#fafafa;
@@ -588,16 +594,18 @@ main{
     border-radius: 8px;
     box-shadow: 0 0 20px -8px #000000;
     z-index: 200;
+    transform: translate(-50%,-50%);
 }
+
 .modal_frame .close{
     position: absolute;
-    width: 48px;
-    height: 48px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background-color: #fafafa;
     border: 2px solid #f1cdb3;
-    top: -48px;
-    right: -48px;
+    top: -45px;
+    right: -45px;
     cursor: pointer;
 }
 
@@ -694,6 +702,15 @@ main{
     background-color: #f1cdb3;
 }
 
+.no_hover{
+    border-color: darkgrey;
+}
+
+.no_hover:hover{
+    cursor: default;
+    background-color:#f6f6f6;
+}
+
 .modal_frame .close:hover{
     background-color:  #f1cdb3;
 }
@@ -776,6 +793,10 @@ main{
         align-self: center;
     }
     
+    .head_top .logo{
+        margin-right: 0;
+    }
+
     .menu_list {
 	    justify-content: center;
     }
@@ -853,6 +874,13 @@ main{
     .modal_frame .modal_info span{
         align-self: center;
     }
+
+    .modal_frame .close{
+        width: 30px;
+        height: 30px;
+        top: -30px;
+        right: -30px;
+    }
 }
 
 @media screen and (max-width:500px){
@@ -885,6 +913,10 @@ main{
     
     .help_item:last-child{
         margin-right: 20%;
+    }
+
+    .slider_item p{
+        font-size: 1rem;
     }
 
     .donat_info p:last-of-type{
@@ -933,5 +965,9 @@ main{
 
     .donat_info .donat_btn::before{
         display: none;
+    }
+
+    .slider_item .btn{
+        padding: 6% 10%;
     }
 }
