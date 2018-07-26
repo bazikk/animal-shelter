@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Animal Shelter</title>
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale = 1">
 	<meta name="format-detection" content="telephone=no">
@@ -62,42 +63,42 @@
 				<div class="dogs_shelter_container">
 					<h2 class="dogs_shelter_container_header">Our friends who are looking for a house</h2>
 					<div class="dogs_shelter_slider">
-						<button type="button" class="slider_btn prev">&larr;</button>
-						<div class="ovreflow_hidden_cont">
-						<div class = "slider_items_container">
-							<div class="slider_item" data-item = "katrine">
+						<button type="button" class="slider_btn prev button--previous">&larr;</button>
+						<div class="overflow_hidden_cont">
+						<div class = "slider_items_container gallery js-flickity">
+							<div class="slider_item gallery-cell" data-item = "katrine">
 								<img src="./img/slider/katrine.png" alt="Katrine">
 								<p>Katrine</p>
 								<button type="button" class="btn" >Learn more</button>
 							</div>
-							<div class="slider_item" data-item = "jennifer">
+							<div class="slider_item gallery-cell" data-item = "jennifer">
 								<img src="./img/slider/jennifer.png" alt="Jennifer">
 								<p>Jennifer</p>
 								<button type="button" class="btn" >Learn more</button>
 							</div>
-							<div class="slider_item" data-item = "woody">
+							<div class="slider_item gallery-cell" data-item = "woody">
 								<img src="./img/slider/woody.png" alt="Woody">
 								<p>Woody</p>
 								<button type="button" class="btn" >Learn more</button>
 							</div>
-							<div class="slider_item" data-item = "katrine">
+							<div class="slider_item gallery-cell" data-item = "katrine">
 								<img src="./img/slider/katrine.png" alt="Katrine">
 								<p>Katrine</p>
 								<button type="button" class="btn" >Learn more</button>
 							</div>
-							<div class="slider_item" data-item = "jennifer">
+							<div class="slider_item gallery-cell" data-item = "jennifer">
 								<img src="./img/slider/jennifer.png" alt="Jennifer">
 								<p>Jennifer</p>
 								<button type="button" class="btn" >Learn more</button>
 							</div>
-							<div class="slider_item" data-item = "woody">
+							<div class="slider_item gallery-cell" data-item = "woody">
 								<img src="./img/slider/woody.png" alt="Woody">
 								<p>Woody</p>
 								<button type="button" class="btn" >Learn more</button>
 							</div>
 						</div>
 						</div>
-					<button type="button" class="slider_btn next">&rarr;</button>
+					<button type="button" class="slider_btn next button--next">&rarr;</button>
 					</div>
 					<a href="pets.html" class="know_rest_btn btn">Get to know the rest</a>
 				</div>
@@ -257,6 +258,7 @@
 		</div>
 		<span class="close"></span>
 	</div>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script src="./js/script.js"></script>
 	<script src="./js/slider.js"></script>
 	<script src="./js/smoothScroll.js"></script>
