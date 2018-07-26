@@ -48,7 +48,10 @@ button{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+<<<<<<< HEAD
     border-radius: 0;
+=======
+>>>>>>> 1f70d723fc749eadfc3cf0d78a0fec24ac65dc10
 }
 
 .head_btn,
