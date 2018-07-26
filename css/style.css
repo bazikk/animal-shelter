@@ -45,6 +45,10 @@ button{
     padding: 0;
     border: 0;
     cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
 }
 
 .head_btn,
